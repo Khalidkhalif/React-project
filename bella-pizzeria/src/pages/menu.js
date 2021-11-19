@@ -1,9 +1,9 @@
 import React from 'react'
 
-export default function PastaPage() {
+export default function MenuPage() {
     return (
         <div>
-            <h1>Pasta Page</h1>
+            <h1>Menu page</h1>
         </div>
     )
 }
