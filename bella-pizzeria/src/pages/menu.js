@@ -1,9 +1,12 @@
 import React from 'react'
+import Button from '@mui/material/button';
 
 export default function MenuPage() {
     return (
-        <div>
-            <h1>Menu page</h1>
-        </div>
+ <Button variant="contained">Hello World</Button>
     )
+
+
+
+    ReactDOM.render(<App />, document.querySelector('#app'));
 }
