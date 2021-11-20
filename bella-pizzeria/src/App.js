@@ -17,7 +17,7 @@ function App() {
   return (
     <ThemeProvider theme={theme}>
       <div className="App">
-        <h1>Front page</h1>
+        <h1>App.js, just a hub for the other pages</h1>
       </div>
     </ThemeProvider>
   );
