@@ -10,7 +10,6 @@ import ShoppingCart from './pages/shoppingcart';
 import Navbar from './components/Navbar'
 
 import React, {useState} from "react";
-import Menu from './pages/Menu';
 import items from './components/Data';
 
 
