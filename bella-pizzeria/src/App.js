@@ -6,6 +6,8 @@ import { BrowserRouter, Route, Routes} from 'react-router-dom';
 import Home from './pages/home';
 import Menu from './pages/menu';
 import Checkout from './pages/checkout';
+import ShoppingCart from './pages/shoppingcart';
+import Navbar from './components/Navbar'
 
 
 function App() {
@@ -20,6 +22,7 @@ function App() {
 
   return (
     <>
+    <BrowserRouter>
       <ThemeProvider theme={theme}>
       <div className="App">
         
@@ -29,14 +32,16 @@ function App() {
 
 
 
-    
-        <BrowserRouter>
+        <Navbar />
+        
           <Routes>
             <Route exact path='/' element={<Home/>} />
             <Route exact path='/menu' element={<Menu/>} /> 
             <Route exact path='/checkout' element={<Checkout/>} /> 
+            <Route exact path='/shoppingcart' element={<ShoppingCart/>} />
           </Routes>
         </BrowserRouter>
+        
     </>
   );
 }
