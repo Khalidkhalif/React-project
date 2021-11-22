@@ -4,7 +4,7 @@ import Item3 from '../../images/item3.jpg'
 import Item4 from '../../images/item4.jpg'
 import Item5 from '../../images/item5.jpg'
 import Item6 from '../../images/item6.jpg'
-import { ADD_TO_CART,REMOVE_ITEM,SUB_QUANTITY,ADD_QUANTITY } from '../actions/action-types/cart-actions'
+import { ADD_TO_CART,REMOVE_ITEM,SUB_QUANTITY,ADD_QUANTITY, ADD_SHIPPING } from '../actions/action-types/cart-actions'
 
 
 const initState = {
@@ -48,6 +48,7 @@ const cartReducer= (state = initState,action)=>{
             
         }
     }
+
     if(action.type === REMOVE_ITEM){
         let itemToRemove= state.addedItems.find(item=> action.id === item.id)
         let new_items = state.addedItems.filter(item=> action.id !== item.id)
@@ -93,7 +94,24 @@ const cartReducer= (state = initState,action)=>{
         }
         
     }
+    if(action.type=== ADD_SHIPPING){
+          return{
+              ...state,
+              total: state.total + 6
+          }
+    }
+
+    if(action.type=== 'SUB_SHIPPING'){
+        return{
+            ...state,
+            total: state.total - 6
+        }
+  }
+    
+  else{
     return state
+    }
+    
 }
 
 export default cartReducer

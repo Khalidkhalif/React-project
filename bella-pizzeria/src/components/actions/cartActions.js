@@ -28,3 +28,11 @@ export const addQuantity=(id)=>{
         id
     }
 }
+
+//add qt action
+export const addShipping=(id)=>{
+    return{
+        type: ADD_SHIPPING,
+        id
+    }
+}

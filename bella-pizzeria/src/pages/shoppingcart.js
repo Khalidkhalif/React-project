@@ -4,6 +4,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux'
 import { Link } from 'react-router-dom'
 import { removeItem,addQuantity,subtractQuantity} from '../components/actions/cartActions'
+import Total from '../components/Total'
 class Cart extends Component{
 
     //to remove the item completely
@@ -14,7 +15,7 @@ class Cart extends Component{
     handleAddQuantity = (id)=>{
         this.props.addQuantity(id);
     }
-    //to substruct from the quantity
+    //to subtract from the quantity
     handleSubtractQuantity = (id)=>{
         this.props.subtractQuantity(id);
     }
@@ -37,8 +38,8 @@ class Cart extends Component{
                                         <Typography variant="subtitle2">Quantity: {item.quantity}</Typography>
                                         
                                         <div className="add-remove">
-                                            <Link to="/cart"><i className="material-icons" onClick={()=>{this.handleAddQuantity(item.id)}}>arrow_drop_up</i></Link>
-                                            <Link to="/cart"><i className="material-icons" onClick={()=>{this.handleSubtractQuantity(item.id)}}>arrow_drop_down</i></Link>
+                                            <Link to="/shoppingcart"><i className="material-icons" onClick={()=>{this.handleAddQuantity(item.id)}}>arrow_drop_up</i></Link>
+                                            <Link to="/shoppingcart"><i className="material-icons" onClick={()=>{this.handleSubtractQuantity(item.id)}}>arrow_drop_down</i></Link>
                                         </div>
                                         
                                         <Button variant="contained" color="primary" className="waves-effect waves-light btn pink remove" onClick={()=>{this.handleRemove(item.id)}}><SvgIcon component={RemoveShoppingCartOutlined}/>Remove</Button>
@@ -60,6 +61,7 @@ class Cart extends Component{
                         {addedItems}
                     </ul>
                 </Box>  
+                <Total />
             </Container>
        )
     }
