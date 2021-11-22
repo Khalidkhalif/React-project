@@ -3,6 +3,7 @@ import './App.css';
 import { ThemeProvider } from '@emotion/react';
 import { amber, teal } from '@mui/material/colors';
 import { createTheme } from '@mui/system';
+import CheckoutPage from './pages/checkout';
 
 function App() {
 
@@ -15,11 +16,12 @@ function App() {
   
 
   return (
-    <ThemeProvider theme={theme}>
+  
       <div className="App">
-        <h1>App.js, just a hub for the other pages</h1>
+        <CheckoutPage/>
       </div>
-    </ThemeProvider>
+    
+    
   );
 }
 
