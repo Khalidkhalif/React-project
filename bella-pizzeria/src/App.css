@@ -1,5 +1,10 @@
 .App {
   text-align: center;
+  background-image:url("https://cdn.discordapp.com/attachments/905096371630141524/912303706521874492/845533.jpeg");
+  position: fixed;
+  min-width: 100%;
+  min-height: 100%;
+  ;
 }
 
 .App-logo {
@@ -35,4 +40,13 @@
   to {
     transform: rotate(360deg);
   }
+
+}
+#image{position: relative;
+flex-direction: row-reverse;
+align-items: flex-start;
+left: 20%;
+}
+.section{
+  height: 100%;
 }

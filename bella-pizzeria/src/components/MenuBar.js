@@ -8,7 +8,7 @@ import {makeStyles} from "@material-ui/core/styles";
 const styles = makeStyles({
     bar:{
         paddingTop:"1.15rem",
-        backgroundColor:"rosybrown",
+        backgroundColor:"white",
         ['@media (max-width:780px)']:{
             flexDirection:"column"
         }
@@ -42,6 +42,7 @@ function NavBar() {
             </Typography>
             <CustomBtn txt="Trial"/>
         </Toolbar>
+
 
     )
 }
