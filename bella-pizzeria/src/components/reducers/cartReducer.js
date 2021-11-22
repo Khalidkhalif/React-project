@@ -15,7 +15,7 @@ const initState = {
         {id:4,title:'White', desc: "Lorem ipsum dolor sit amet co ctetipisicing elit. Minima, ex. price:260,img:Item4},
         {id:5,title:'Cropped-sho', desc: "Lorem ipsum dolor si  conse ur adipisicing elit. Minima, ex. price:160,img: Item5},
         {id:6,title:'Blues', desc: "Lorem ipsum dolor sit amc cter adipis ng elit. Minima, ex price:90,img: Item6}*/
-        { id: 1, name: 'Napoli', price: 199, img: "./images/ig", igredients: 'Tomatosauce live, pecorino, capers, red chili, oregano'},
+        { id: 1, name: 'Napoli', price: 199, img: "./images/napoli.png", igredients: 'Tomatosauce live, pecorino, capers, red chili, oregano'},
         { id: 2, name: 'Quatttro ', price: 229,  img: "./images/Quattro.png", ingredients: 'Tomato, mozz lla, asparagus, pancetta, mushroom, grana padano, strong salami, paprika'},
         { id: 3, name: 'Pesto', price: 179,      img: "./images/Pesto.png", ingredients: 'Ricotta eese, Buffalo mozzarella, grana padano, cherry tomato, asparagus'}, 
         { id: 4, name: 'Diavola', price: 189,    img: "./images/Diavola.png", ingredients: ' Grana Pa a cream, mozzarella, mushroom, ham, grana padona, truffle oil'},

@@ -1,4 +1,4 @@
-import { Box, Button, Card, CardContent, Container, SvgIcon, Typography } from '@material-ui/core';
+import { Box, Button, Card, CardContent, Container, SvgIcon, Typography, Grid } from '@material-ui/core';
 import { RemoveShoppingCartOutlined } from '@mui/icons-material';
 import React, { Component } from 'react';
 import { connect } from 'react-redux'
@@ -24,10 +24,18 @@ class Cart extends Component{
         let addedItems = this.props.items.length ?
             (  
                 this.props.items.map(item=>{
-                    return(
-                       
-                        <Container className="collection-item avatar" key={item.id}>
-                                    <Card className="item-img"> 
+                    return( 
+                        
+                        <Container maxWidth="md" className="collection-item avatar" key={item.id}>
+                         <Grid
+                container
+                spacing={2}
+                direction="row"
+                justify="flex-start"
+                alignItems="flex-start"
+            >     
+                                
+                                <Card className="item-img"> 
                                         <img src={item.img} alt={item.img} className=""/>
                                     
                                 
@@ -45,7 +53,10 @@ class Cart extends Component{
                                         <Button variant="contained" color="primary" className="waves-effect waves-light btn pink remove" onClick={()=>{this.handleRemove(item.id)}}><SvgIcon component={RemoveShoppingCartOutlined}/>Remove</Button>
                                     </CardContent>
                                     </Card>
-                            </Container>                        
+                                    
+                                    </Grid>   
+                            </Container>  
+                                               
                     )
                 })
             ):
