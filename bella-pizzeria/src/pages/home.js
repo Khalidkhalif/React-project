@@ -13,7 +13,9 @@ import CardActions from '@mui/material/CardActions';
 
 
 import { CardActionArea } from '@mui/material';
-import {ActionAreaCard} from '../components/ActionArea'
+import ActionAreaCard from '../components/ActionArea';
+
+
 
 const Home =() => {
     return (
@@ -23,9 +25,13 @@ const Home =() => {
 
         <Container align="center">
             <Typography variant="h1">Welcome to Bella Pizzeria!</Typography>
-            <img src="../images/delicious.jpeg" />
-
         </Container>
+
+        <Container align="center">
+            <Typography variant="h4" component="h1">“Life is a combination of magic and pasta.”</Typography>
+        </Container>
+
+        <ActionAreaCard/>
     </div>
         )
 }

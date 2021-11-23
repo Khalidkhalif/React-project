@@ -4,28 +4,52 @@ import CardContent from '@mui/material/CardContent';
 import CardActions from '@mui/material/CardActions';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
-import { CardActionArea } from '@mui/material';
+import { CardActionArea, Container } from '@mui/material';
+import Page from '../../src/Page.css'
 
 export default function ActionAreaCard() {
     return (
-        <Card sx={{ maxWidth: 250 }}>
+        <>
+        <Container align="center">
+        <Container class="container">
+        <Card  sx={{ maxWidth: 720 }}>
             <CardActionArea>
                 <CardMedia
                     component="img"
-                    height="140"
-                    image="bella-pizzeria/src/Pizza.png"
+                    width="400px"
+                    margin-right="10px"
+                    height="540px"
+                    image="https://www.pizzagirlpatrol.com/wp-content/uploads/2020/04/where-to-eat-delicious-pizza-in-berlin-scaled.jpg"
                   />
                 <CardContent>
                     <Typography gutterBottom variant="h5" component="div">
-                        Pizza
+                        Our authentic Italian pizza with four types of cheese
                     </Typography>
-                    <Typography variant="body2" color="text.secondary">
-                        Lizards are a widespread group of squamate reptiles, with over 6,000
-                        species, ranging across all continents except Antarctica
-                    </Typography>
+                    
                 </CardContent>
             </CardActionArea>
         </Card>
+        </Container>
 
+        <Container class="container">
+        <Card sx={{ maxWidth: 1000}}>
+            <CardActionArea>
+                <CardMedia
+                    component="img"
+                    height="540px"
+                    image="https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fimg1.cookinglight.timeinc.net%2Fsites%2Fdefault%2Ffiles%2Fstyles%2Fmedium_2x%2Fpublic%2F1541092080%2Fpasta-with-italian-sunday-sauce-1812-p29.jpg%3Fitok%3DyKQ1tzJP"
+                  />
+                <CardContent>
+                    <Typography gutterBottom variant="h5" component="div">
+                        Creamy Pasta with Tomato Sauce
+                    </Typography>
+                    
+                </CardContent>
+            </CardActionArea>
+        </Card>
+        </Container>
+        </Container>
+        
+</>
     );
 }
