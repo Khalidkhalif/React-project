@@ -38,8 +38,8 @@ import { CardMedia } from '@mui/material';
         })
 
         return(
-            <Container className="container">
-                <Typography variant="h4">Our items</Typography>
+            <Container mt={5} align="center" className="container">
+                <Typography mt={5} variant="h4">Our items</Typography>
                 <Box className="box">
                     {itemList}
                 </Box>
