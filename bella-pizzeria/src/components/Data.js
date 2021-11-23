@@ -14,7 +14,6 @@ const menu = [
     img: "./images/Quattro.png",
     ingredients: 'Tomato, mozzarella, asparagus, pancetta'
    
-
   },
 
   { id: 3,
@@ -81,7 +80,6 @@ const menu = [
     img: "./images/Dronningen.jpg",
     ingredients: 'Beef, peppers, onions, mushrooms'
 
-    
   },
 
   { id: 11,
