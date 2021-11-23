@@ -66,7 +66,6 @@ const App = () =>   {
         </BrowserRouter>
         
     </>
-
   );
 //<Route exact path='/' element={<Home/>} />
 }

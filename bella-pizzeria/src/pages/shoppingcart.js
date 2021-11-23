@@ -19,8 +19,7 @@ class Cart extends Component{
     handleSubtractQuantity = (id)=>{
         this.props.subtractQuantity(id);
     }
-
-
+  
     render(){
               
         let addedItems = this.props.items.length ?

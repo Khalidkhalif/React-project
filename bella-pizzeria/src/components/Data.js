@@ -1,15 +1,15 @@
 const menu = [
   { id: 1,
-    name: 'Napoli',
+    name: 'Margarita',
     price: 199,
-    img: "./images/Napoli.png",
+    img: "./images/Margarita.jpg",
     ingredients: 'Tomatosauce, olive, pecorino, capers'
    
 
   },
 
   { id: 2,
-    name: 'Quatttro ',
+    name: 'Quattro ',
     price: 229,
     img: "./images/Quattro.png",
     ingredients: 'Tomato, mozzarella, asparagus, pancetta'
