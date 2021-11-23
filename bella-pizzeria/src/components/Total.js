@@ -2,7 +2,6 @@ import { Button, Container, List } from '@mui/material'
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import { Link } from 'react-router-dom'
-import { addShipping } from './actions/cartActions'
 class Total extends Component{
 
     componentWillUnmount() {

@@ -1,11 +1,5 @@
-import Item1 from '../../images/item1.jpg'
-import Item2 from '../../images/item2.jpg'
-import Item3 from '../../images/item3.jpg'
-import Item4 from '../../images/item4.jpg'
-import Item5 from '../../images/item5.jpg'
-import Item6 from '../../images/item6.jpg'
 import { ADD_TO_CART,REMOVE_ITEM,SUB_QUANTITY,ADD_QUANTITY, ADD_SHIPPING } from '../actions/action-types/cart-actions'
-import menu  from '../../components/Data'
+
 
 
 
@@ -41,7 +35,7 @@ const cartReducer= (state = initState,action)=>{
     //INSIDE HOME COMPONENT
     if(action.type === ADD_TO_CART){
           let addedItem = state.items.find(item=> item.id === action.id)
-          //check if the action id exists in the addedItems
+          
          let existed_item= state.addedItems.find(item=> action.id === item.id)
          if(existed_item)
          {

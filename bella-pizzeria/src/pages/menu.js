@@ -1,4 +1,4 @@
-import { Container, Card, CardContent, Box, Button, Typography, SvgIcon, Grid } from '@material-ui/core';
+import { Container, Card, CardContent, Box, Button, Typography, SvgIcon } from '@material-ui/core';
 import { ShoppingCart } from '@mui/icons-material';
 import React, { Component } from 'react';
 import { connect } from 'react-redux'
@@ -38,8 +38,8 @@ import { CardMedia } from '@mui/material';
         })
 
         return(
-            <Container mt={5} align="center" className="container">
-                <Typography mt={5} variant="h4">Our items</Typography>
+            <Container align="center" className="container">
+                <Typography variant="h4">Our items</Typography>
                 <Box className="box">
                     {itemList}
                 </Box>

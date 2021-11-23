@@ -1,9 +1,8 @@
-import { Box, Button, Card, CardContent, Container, SvgIcon, Typography, Grid } from '@material-ui/core';
+import { Box, Button, Card, CardContent, Container, SvgIcon, Typography } from '@material-ui/core';
 import { RemoveShoppingCartOutlined } from '@mui/icons-material';
 import { CardMedia } from '@mui/material';
 import React, { Component } from 'react';
 import { connect } from 'react-redux'
-import { Link } from 'react-router-dom'
 import { removeItem,addQuantity,subtractQuantity} from '../components/actions/cartActions'
 import Total from '../components/Total'
 class Cart extends Component{

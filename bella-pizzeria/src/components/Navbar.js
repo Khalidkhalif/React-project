@@ -1,23 +1,3 @@
-/*import React from 'react';
-import { Link } from 'react-router-dom'
- const Navbar = ()=>{
-    return(
-            <nav className="nav-wrapper">
-                <div className="container">
-                    <Link to="/" className="brand-logo">Shopping</Link>
-                    
-                    <ul className="right">
-                        <li><Link to="/menu">Shop</Link></li>
-                        <li><Link to="/shoppingcart">My cart</Link></li>
-                        <li><Link to="/shoppingcart"><i className="material-icons">shopping_cart</i></Link></li>
-                    </ul>
-                </div>
-            </nav>  
-    )
-}
-
-export default Navbar;*/
-
 import React from "react";
 
 import {Toolbar, Typography} from "@material-ui/core";
@@ -53,7 +33,7 @@ const NavBar = ()=>{
     const classes = styles()
     return (
         
-        <Toolbar position="sticky"  className={classes.bar}>
+        <Toolbar sx={{pb: 500}} position="sticky"  className={classes.bar}>
             <Container sx={{ ml: 28}}>
             <Link to="/"><Typography style={{color:"white"}} variant="h6" className={classes.menuItem}>
             Home
