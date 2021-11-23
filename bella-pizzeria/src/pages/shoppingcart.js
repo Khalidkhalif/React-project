@@ -1,5 +1,6 @@
 import { Box, Button, Card, CardContent, Container, SvgIcon, Typography, Grid } from '@material-ui/core';
 import { RemoveShoppingCartOutlined } from '@mui/icons-material';
+import { CardMedia } from '@mui/material';
 import React, { Component } from 'react';
 import { connect } from 'react-redux'
 import { Link } from 'react-router-dom'
@@ -27,21 +28,17 @@ class Cart extends Component{
                 this.props.items.map(item=>{
                     return( 
                         
-                        <Container maxWidth="md" className="collection-item avatar" key={item.id}>                       
-                                <Card maxWidth="md" className="item-img"> 
-                                        <img src={item.img} alt={item.img} className=""/>
-                                    
+                        <Container mb={3} className="collection-item avatar" key={item.id}>                       
+                                <Card mb={3} className="card"> 
+                
+                                        <CardMedia component="img" image={item.img} alt="green iguana" width="193" height="130"/>
                                 
-                                    <CardContent className="item-desc">
+                                    <CardContent className="card-content">
                                         <Typography variant="h5">{item.title}</Typography>
                                         <Typography variant="subtitle1">{item.desc}</Typography>
                                         <Typography variant="subtitle1">Price: {item.price} kr</Typography>
                                         <Typography variant="subtitle2">Quantity: {item.quantity}</Typography>
                                         
-                                        <div className="add-remove">
-                                            <Link to="/shoppingcart"><i className="material-icons" onClick={()=>{this.handleAddQuantity(item.id)}}>arrow_drop_up</i></Link>
-                                            <Link to="/shoppingcart"><i className="material-icons" onClick={()=>{this.handleSubtractQuantity(item.id)}}>arrow_drop_down</i></Link>
-                                        </div>
                                         
                                         <Button variant="contained" color="primary" className="waves-effect waves-light btn pink remove" onClick={()=>{this.handleRemove(item.id)}}><SvgIcon component={RemoveShoppingCartOutlined}/>Remove</Button>
                                     </CardContent>
@@ -50,7 +47,9 @@ class Cart extends Component{
                             </Container>  
                                                
                     )
+                    
                 })
+                
             ):
 
              (
