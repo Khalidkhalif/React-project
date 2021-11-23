@@ -54,19 +54,19 @@ const NavBar = ()=>{
     return (
         
         <Toolbar position="sticky"  className={classes.bar}>
-            <Container pr={5}>
+            <Container sx={{ ml: 28}}>
             <Link to="/"><Typography style={{color:"white"}} variant="h6" className={classes.menuItem}>
             Home
             </Typography></Link>
             </Container>
 
-            <Container pr={5}>
+            <Container sx={{ ml: 28}}>
             <Link to="/menu"><Typography style={{color:"white"}} variant="h6" className={classes.menuItem}>
                 Menu
             </Typography></Link>
             </Container>
     
-            <Container pr={5}>
+            <Container sx={{ ml: 28}}>
             <Link to="/shoppingcart"><Typography style={{color:"white"}} variant="h6" className={classes.menuItem}>
                 Your order
             </Typography></Link>
