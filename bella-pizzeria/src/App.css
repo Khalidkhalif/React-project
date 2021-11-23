@@ -50,3 +50,6 @@ left: 20%;
 .section{
   height: 100%;
 }
+.html {
+  scroll-behaviour: smooth;
+}

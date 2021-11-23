@@ -8,7 +8,7 @@ import {makeStyles} from "@material-ui/core/styles";
 const styles = makeStyles({
     bar:{
         paddingTop:"1.15rem",
-        backgroundColor:"white",
+        backgroundColor:"black",
         ['@media (max-width:780px)']:{
             flexDirection:"column"
         }
@@ -28,16 +28,16 @@ function NavBar() {
     const classes = styles()
     return (
         <Toolbar position="sticky"  className={classes.bar}>
-            <Typography variant="h6" className={classes.menuItem}>
+            <Typography style={{color:"white"}} variant="h6" className={classes.menuItem}>
             Home
             </Typography>
-            <Typography variant="h6" className={classes.menuItem}>
+            <Typography style={{color:"white"}} variant="h6" className={classes.menuItem}>
                 Menu
             </Typography>
-            <Typography variant="h6" className={classes.menuItem}>
+            <Typography style={{color:"white"}} variant="h6" className={classes.menuItem}>
                 Check out
             </Typography>
-            <Typography variant="h6" className={classes.menuItem}>
+            <Typography style={{color:"white"}} variant="h6" className={classes.menuItem}>
                 Contact us
             </Typography>
             <CustomBtn txt="Trial"/>
