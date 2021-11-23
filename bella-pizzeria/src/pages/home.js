@@ -14,8 +14,11 @@ import CardActions from '@mui/material/CardActions';
 
 import { CardActionArea } from '@mui/material';
 import {ActionAreaCard} from '../components/ActionArea'
+import { render } from 'react-dom';
 
-const Home =() => {
+export default function Home(){
+    
+    
     return (
     
     
@@ -23,10 +26,15 @@ const Home =() => {
 
         <Container align="center">
             <Typography variant="h1">Welcome to Bella Pizzeria!</Typography>
-            <img src="../images/delicious.jpeg" />
+
+            <div>
+                <img src="../images/item2.jpg" />
+            </div>
 
         </Container>
+        
     </div>
+    
         )
 }
-export default Home;
+
