@@ -16,6 +16,9 @@ class Total extends Component{
         }
     }
 
+    
+    
+
     render(){
         
         return(
@@ -32,10 +35,18 @@ class Total extends Component{
                     <div className="checkout">
                         <button className="waves-effect waves-light btn">Checkout</button>
                     </div>
+                    <h2>{this.state.count}</h2>
                  </div>
+
+                 
         )
     }
 }
+
+
+
+  
+
 
 const mapStateToProps = (state)=>{
     return{
