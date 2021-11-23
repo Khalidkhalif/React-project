@@ -11,6 +11,7 @@ import Navbar from './components/Navbar'
 
 import React, {useState} from "react";
 import items from './components/Data';
+import { Container, Grid } from '@material-ui/core';
 
 
 const App = () =>   {
@@ -29,9 +30,12 @@ const App = () =>   {
     <>
     <BrowserRouter>
       <ThemeProvider theme={theme}>
-      <div className="App">
+      
+      <Container className="App">
         
-      </div>
+      </Container>
+      
+
     </ThemeProvider>
 
 

@@ -1,4 +1,4 @@
-import { Container, Card, CardContent, Box, Button, Typography, SvgIcon } from '@material-ui/core';
+import { Container, Card, CardContent, Box, Button, Typography, SvgIcon, Grid } from '@material-ui/core';
 import { ShoppingCart } from '@mui/icons-material';
 import React, { Component } from 'react';
 import { connect } from 'react-redux'
@@ -15,6 +15,8 @@ import { addToCart } from '../components/actions/cartActions';
         let itemList = this.props.items.map(item=>{
             return(
                 <Container className="card" key={item.id}>
+                        <Grid container spacing={2}>
+                <Grid item xs={12} md={8} lg={4}>
                         <Card className="card-image">
                             <img src={item.img} alt={item.title}/>
                         
@@ -25,6 +27,8 @@ import { addToCart } from '../components/actions/cartActions';
                                 <Button to="/" variant="contained" color="primary" onClick={()=>{this.handleClick(item.id)}}><SvgIcon component={ShoppingCart}/>Add</Button>
                             </CardContent>
                         </Card>
+                        </Grid>
+                        </Grid>
                  </Container>
             )
         })

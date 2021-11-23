@@ -26,16 +26,8 @@ class Cart extends Component{
                 this.props.items.map(item=>{
                     return( 
                         
-                        <Container maxWidth="md" className="collection-item avatar" key={item.id}>
-                         <Grid
-                container
-                spacing={2}
-                direction="row"
-                justify="flex-start"
-                alignItems="flex-start"
-            >     
-                                
-                                <Card className="item-img"> 
+                        <Container maxWidth="md" className="collection-item avatar" key={item.id}>                       
+                                <Card maxWidth="md" className="item-img"> 
                                         <img src={item.img} alt={item.img} className=""/>
                                     
                                 
@@ -54,7 +46,6 @@ class Cart extends Component{
                                     </CardContent>
                                     </Card>
                                     
-                                    </Grid>   
                             </Container>  
                                                
                     )
