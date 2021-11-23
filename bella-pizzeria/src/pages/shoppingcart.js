@@ -33,12 +33,15 @@ class Cart extends Component{
                 
                                         <CardMedia component="img" image={item.img} alt="green iguana" width="193" height="130"/>
                                 
+                                
                                     <CardContent className="card-content">
                                         <Typography variant="h5">{item.title}</Typography>
                                         <Typography variant="subtitle1">{item.desc}</Typography>
                                         <Typography variant="subtitle1">Price: {item.price} kr</Typography>
                                         <Typography variant="subtitle2">Quantity: {item.quantity}</Typography>
                                         
+                                        
+
                                         
                                         <Button variant="contained" color="primary" className="waves-effect waves-light btn pink remove" onClick={()=>{this.handleRemove(item.id)}}><SvgIcon component={RemoveShoppingCartOutlined}/>Remove</Button>
                                     </CardContent>
