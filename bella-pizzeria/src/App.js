@@ -9,10 +9,38 @@ import HookCounter from "./components/AddingFunction";
 import ActionAreaCard from "./components/CardContent";
 import {BrowserRouter as Router, Switch, Route} from "react-router-dom";
 import Home from "./pages/home";
+import data from './data';
+import Main from './components/Main'
+import Basket from "./components/Basket";
+import {useState} from "react";
+
 
 function App() {
 
-const useStyles = makeStyles({
+    const{products}=data;
+    const[cartItems, setCartItems] = useState([]);
+    const onAdd=(product)=>{
+        const exist = cartItems.find( x => x.id === product.id);
+        if(exist) {
+            setCartItems(cartItems.map(x => x.id === product.id ?{...exist, qty: exist.qty +1}: x))
+        } else{
+            setCartItems([...cartItems, {...product, qty: 1}])
+        }
+    };
+    const onRemove = (product) => {
+        const exist = cartItems.find((x) => x.id === product.id);
+        if (exist.qty ===1){
+            setCartItems(cartItems.filter((x) => x.id !== product.id))};
+    } else{setCartItems(cartItems.map((x)=>
+    x.id=== product.id ? {...exist, qty: exist.qty -1}: x))}
+    return (
+        <div className="App">
+            <Main onAdd ={onAdd} products={products}></Main>
+            <Basket onAdd ={onAdd} cartItems={cartItems}></Basket>
+        </div>
+    )}
+export default App;
+/*const useStyles = makeStyles({
     root:{
         background:'linear-gradient(45deg,#FE6B8B, #FF8E53',
         backgroundImage:'background.jpeg',
@@ -51,4 +79,4 @@ const useStyles = makeStyles({
   );
 }
 
-export default App;
+export default App;*/
