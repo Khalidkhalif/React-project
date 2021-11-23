@@ -1,4 +1,4 @@
-const imgMyimageexample = require('../assets/imageexample.jpg');
+
 const divStyle = {
     width: '88%',
     height: '800px',
