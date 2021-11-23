@@ -2,10 +2,13 @@ import './App.css';
 import { ThemeProvider } from '@emotion/react';
 import { amber, teal } from '@mui/material/colors';
 import { createTheme } from '@mui/system';
+import CheckoutPage from './pages/checkout';
+
 import { BrowserRouter, Route, Routes} from 'react-router-dom';
 import Home from './pages/home';
 import Menu from './pages/menu';
 import Checkout from './pages/checkout';
+
 
 
 function App() {
@@ -27,9 +30,6 @@ function App() {
     </ThemeProvider>
 
 
-
-
-    
         <BrowserRouter>
           <Routes>
             <Route exact path='/' element={<Home/>} />
