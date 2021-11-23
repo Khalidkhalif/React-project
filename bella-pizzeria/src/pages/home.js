@@ -14,22 +14,26 @@ import { addToCart } from '../components/actions/cartActions';
     render(){
         let itemList = this.props.items.map(item=>{
             return(
-                <Container className="card" key={item.id}>
+                
+                <Container className="card" key={item.id}>  
                         <Grid container spacing={2}>
-                <Grid item xs={12} md={8} lg={4}>
+                         <Grid item xs={12} md={6} lg={3}>
+                         
                         <Card className="card-image">
-                            <img src={item.img} alt={item.title}/>
-                        
+                            <img src={item.img} alt={item.title} width="193" height="130"/>
                             <CardContent className="card-content">
                                 <Typography variant="h5">{item.title}</Typography>
                                 <Typography variant="subtitle1">{item.desc}</Typography>
                                 <Typography variant="subtitle1">Price: {item.price} kr</Typography>
                                 <Button to="/" variant="contained" color="primary" onClick={()=>{this.handleClick(item.id)}}><SvgIcon component={ShoppingCart}/>Add</Button>
+                                
                             </CardContent>
                         </Card>
                         </Grid>
                         </Grid>
+                        
                  </Container>
+               
             )
         })
 

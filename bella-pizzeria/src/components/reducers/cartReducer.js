@@ -5,6 +5,8 @@ import Item4 from '../../images/item4.jpg'
 import Item5 from '../../images/item5.jpg'
 import Item6 from '../../images/item6.jpg'
 import { ADD_TO_CART,REMOVE_ITEM,SUB_QUANTITY,ADD_QUANTITY, ADD_SHIPPING } from '../actions/action-types/cart-actions'
+import menu  from '../../components/Data'
+
 
 
 const initState = {
@@ -15,6 +17,7 @@ const initState = {
         {id:4,title:'White', desc: "Lorem ipsum dolor sit amet co ctetipisicing elit. Minima, ex. price:260,img:Item4},
         {id:5,title:'Cropped-sho', desc: "Lorem ipsum dolor si  conse ur adipisicing elit. Minima, ex. price:160,img: Item5},
         {id:6,title:'Blues', desc: "Lorem ipsum dolor sit amc cter adipis ng elit. Minima, ex price:90,img: Item6}*/
+        
         { id: 1, name: 'Napoli', price: 199, img: "./images/napoli.png", igredients: 'Tomatosauce live, pecorino, capers, red chili, oregano'},
         { id: 2, name: 'Quatttro ', price: 229,  img: "./images/Quattro.png", ingredients: 'Tomato, mozz lla, asparagus, pancetta, mushroom, grana padano, strong salami, paprika'},
         { id: 3, name: 'Pesto', price: 179,      img: "./images/Pesto.png", ingredients: 'Ricotta eese, Buffalo mozzarella, grana padano, cherry tomato, asparagus'}, 
@@ -35,6 +38,8 @@ const initState = {
         { id: 18, name: 'Le vele del circeo', price: 179, img: " mages/Le vele del circeo.jpeg", ingredients: 'Pasta Italian cuisine Bolognese sauce Meatball Fra diavolo sauce, pasta, food, recipe, cuis'},
         { id: 19, name: 'Fettuccine altartufo', price: 239, img: "./images/Fettuccine altartufo.jpg", ingredients: ' pasta with sauce in bowl, Pasta Bolognese sauce Pizza Italian cuisine Caprese salad, spaghetti, food, recipe, tomat'},
         { id: 20, name: 'Padella', price: 249,   img: "./images/Padella.png", ingredients: 'Fried rice inese cuisine Paella Pizza Pasta, rice, food, recipe, chicken Meatballs'}
+        
+        
         ],
 addedItems:[],
     total: 0
