@@ -1,5 +1,7 @@
+import { Button, Container, List } from '@mui/material'
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
+import { Link } from 'react-router-dom'
 import { addShipping } from './actions/cartActions'
 class Total extends Component{
 
@@ -19,22 +21,22 @@ class Total extends Component{
     render(){
         
         return(
-            <div className="container">
-                <div className="collection">
-                    <li className="collection-item">
+            <Container className="container">
+                <Container className="collection">
+                    <List className="collection-item">
                             <label>
                                 <input type="checkbox" ref="shipping" onChange= {this.handleChecked} />
                                 <span>Delivery(+6$)</span>
                             </label>
-                        </li>
-                        <li className="collection-item"><b>Total: {this.props.total} $</b></li>
-                    </div>
-                    <div className="checkout">
-                        <button className="waves-effect waves-light btn">Checkout</button>
-                    </div>
+                        </List>
+                        <List className="collection-item"><b>Total: {this.props.total} $</b></List>
+                    </Container>
+                    <Container className="checkout">
+                    <Link to="/checkout" underline="none"><Button variant="contained" color="success" className="waves-effect waves-light btn">Checkout</Button></Link>
+                    </Container>
 
-                    <h2>{this.state.count}</h2>
-                 </div>
+                    
+                 </Container>
 
                  
         )

@@ -9,14 +9,16 @@ import Checkbox from '@mui/material/Checkbox';
 import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
 import Paper from '@mui/material/Paper';
+import { Link } from 'react-router-dom';
 
 export default function CheckoutPage() {
     return (
       <div>
-        <Typography variant="h4" gutterBottom>
+        
+      <Container alignItems="center" maxWidth="md">
+      <Typography align="center" variant="h4" gutterBottom>
         Checkout
       </Typography>
-      <Container maxWidth="md">
       <Paper variant="outlined" sx={{ my: { xs: 3, md: 6 }, p: { xs: 2, md: 3 } }}>
       <Typography variant="h6" gutterBottom>
         Shipping address
@@ -162,7 +164,7 @@ export default function CheckoutPage() {
         </Grid>
       </Grid>
       </Paper>
-      <Button variant="contained">Place Order</Button>
+      <Link to="/thankyou"><Button align="center" variant="contained">Place Order</Button></Link>
       </Container>
       
     </div>
