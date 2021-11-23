@@ -5,7 +5,7 @@ import { createTheme } from '@mui/system';
 import CheckoutPage from './pages/checkout';
 
 import { BrowserRouter, Route, Routes} from 'react-router-dom';
-import Home from './pages/Home';
+import Home from './pages/home';
 import Menu from './pages/thisismenu';
 import Checkout from './pages/checkout';
 import ShoppingCart from './pages/shoppingcart';
