@@ -2,6 +2,8 @@ import './App.css';
 import { ThemeProvider } from '@emotion/react';
 import { amber, teal } from '@mui/material/colors';
 import { createTheme } from '@mui/system';
+import CheckoutPage from './pages/checkout';
+
 import { BrowserRouter, Route, Routes} from 'react-router-dom';
 import Home from './pages/Home';
 import Menu from './pages/thisismenu';
@@ -13,6 +15,7 @@ import React, {useState} from "react";
 import items from './components/Data';
 import { Container, Grid, makeStyles } from '@material-ui/core';
 import backgroundImage from './images/background.jpeg'
+
 
 
 const App = () =>   {
@@ -30,6 +33,7 @@ const App = () =>   {
         padding: '5px 30px',
     }
 })*/
+
 
   const theme = createTheme({
     palette: {
@@ -52,6 +56,7 @@ const App = () =>   {
     </ThemeProvider>
 
         <Navbar />
+
           <Routes>
             <Route exact path='/' element={<Home/>} />
             <Route exact path='/thisismenu' element={<Menu/>} /> 
