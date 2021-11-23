@@ -6,7 +6,7 @@ import { addToCart } from '../components/actions/cartActions';
 import Page from '../../src/Page.css'
 import { CardMedia } from '@mui/material';
 
- class Home extends Component{
+ class Menu extends Component{
     
     handleClick = (id)=>{
         this.props.addToCart(id); 
@@ -62,32 +62,5 @@ const mapDispatchToProps= (dispatch)=>{
     }
 }
 
-export default connect(mapStateToProps,mapDispatchToProps)(Home)
+export default connect(mapStateToProps,mapDispatchToProps)(Menu)
 
-import { makeStyles } from "@material-ui/core";
-import React from "react";
-import NavBar from "../components/Navbar";
-
-
-const useStyles = makeStyles({
-    root:{
-        background:'linear-gradient(45deg,#FE6B8B, #FF8E53',
-        backgroundImage: 'images/background.jpeg',
-        border: 0,
-        marginBottom: 15,
-        borderRadius: 15,
-        color:'white',
-        padding: '5px 30px',
-    }
-})
-
-const Home =() => {
-    return (
-    
-    
-    <div>
-        <NavBar />
-    </div>
-        )
-}
-export default Home;

@@ -31,6 +31,7 @@ const initState = {
         { id: 18, name: 'King Prawn & Crayfish', price: 229, img: "./images/PrawnCrayfish.jpg", ingredients: 'King prawns and crayfish in a creamy seafood and tomato sauce with a hint of chilli, topped with a large king prawn in its shell.'},
         { id: 19, name: 'Purple Pesto Genovese', price: 239, img: "./images/PurplePestoGenovese.jpg", ingredients: 'Green pesto and cream sauce with fine green beans and pine nuts. Topped with purple pesto'},
         { id: 20, name: 'Beef Brisket Parpadelle', price: 249,   img: "./images/BeefParpadelle.jpg", ingredients: 'Pulled beef brisket & red wine ragu with sunblushed tomatoes and long flat ribbon pappardelle.'}
+
         ],
 addedItems:[],
     total: 0
