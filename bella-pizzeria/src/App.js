@@ -6,10 +6,11 @@ import CheckoutPage from './pages/checkout';
 
 import { BrowserRouter, Route, Routes} from 'react-router-dom';
 import Home from './pages/home';
-import Menu from './pages/thisismenu';
+import Menu from './pages/menu';
 import Checkout from './pages/checkout';
 import ShoppingCart from './pages/shoppingcart';
-import Navbar from './components/Navbar'
+import Navbar from './components/Navbar';
+import ThankYou from './pages/thankyou';
 
 import React, {useState} from "react";
 import items from './components/Data';
@@ -48,9 +49,9 @@ const App = () =>   {
     <BrowserRouter>
       <ThemeProvider theme={theme}>
       
-      <Container className="App">
-          
-      </Container>
+        <Container className="App">
+            
+        </Container>
       
 
     </ThemeProvider>
@@ -59,15 +60,15 @@ const App = () =>   {
 
           <Routes>
             <Route exact path='/' element={<Home/>} />
-            <Route exact path='/thisismenu' element={<Menu/>} /> 
+            <Route exact path='/menu' element={<Menu/>} /> 
             <Route exact path='/checkout' element={<Checkout/>} /> 
             <Route exact path='/shoppingcart' element={<ShoppingCart/>} />
+            <Route exact path='/thankyou' element={<ThankYou/>} />
           </Routes>
         </BrowserRouter>
         
     </>
   );
-//<Route exact path='/' element={<Home/>} />
 }
 
 export default App;
