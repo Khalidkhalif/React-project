@@ -26,10 +26,10 @@ class Total extends Component{
                     <List className="collection-item">
                             <label>
                                 <input type="checkbox" ref="shipping" onChange= {this.handleChecked} />
-                                <span>Delivery(+6$)</span>
+                                <span>Delivery(+60kr)</span>
                             </label>
                         </List>
-                        <List className="collection-item"><b>Total: {this.props.total} $</b></List>
+                        <List className="collection-item"><b>Total: {this.props.total} kr</b></List>
                     </Container>
                     <Container className="checkout">
                     <Link to="/checkout" underline="none"><Button variant="contained" color="success" className="waves-effect waves-light btn">Checkout</Button></Link>
