@@ -162,8 +162,9 @@ export default function CheckoutPage() {
         </Grid>
       </Grid>
       </Paper>
-      </Container>
       <Button variant="contained">Place Order</Button>
+      </Container>
+      
     </div>
     );
 }
