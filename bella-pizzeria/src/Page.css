@@ -1,0 +1,9 @@
+.container {
+    display: inline-grid;
+    margin-bottom: 50px;
+}
+
+.card {
+    width: 350px;
+    height: 300px;
+}
