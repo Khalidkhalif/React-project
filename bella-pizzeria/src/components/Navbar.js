@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom'
                     <Link to="/" className="brand-logo">Shopping</Link>
                     
                     <ul className="right">
-                        <li><Link to="/">Shop</Link></li>
+                        <li><Link to="/menu">Shop</Link></li>
                         <li><Link to="/shoppingcart">My cart</Link></li>
                         <li><Link to="/shoppingcart"><i className="material-icons">shopping_cart</i></Link></li>
                     </ul>
@@ -22,7 +22,10 @@ import React from "react";
 
 import {Toolbar, Typography} from "@material-ui/core";
 import {makeStyles} from "@material-ui/core/styles";
-import { Link } from "@mui/material";
+import { Link } from "react-router-dom";
+import { Container } from "@mui/material";
+
+
 
 
 
@@ -45,29 +48,35 @@ const styles = makeStyles({
         }
     }
 })
-function NavBar() {
+
+const NavBar = ()=>{ 
     const classes = styles()
     return (
-        <nav className="nav-wrapper">
+        
         <Toolbar position="sticky"  className={classes.bar}>
-            <Link to="/pages/Home"><Typography style={{color:"white"}} variant="h6" className={classes.menuItem}>
+            <Container pr={5}>
+            <Link to="/"><Typography style={{color:"white"}} variant="h6" className={classes.menuItem}>
             Home
             </Typography></Link>
-            <Typography style={{color:"white"}} variant="h6" className={classes.menuItem}>
+            </Container>
+
+            <Container pr={5}>
+            <Link to="/menu"><Typography style={{color:"white"}} variant="h6" className={classes.menuItem}>
                 Menu
-            </Typography>
-            <Typography style={{color:"white"}} variant="h6" className={classes.menuItem}>
-                Check out
-            </Typography>
-            <Typography style={{color:"white"}} variant="h6" className={classes.menuItem}>
-                Contact us
-            </Typography>
-            
+            </Typography></Link>
+            </Container>
+    
+            <Container pr={5}>
+            <Link to="/shoppingcart"><Typography style={{color:"white"}} variant="h6" className={classes.menuItem}>
+                Your order
+            </Typography></Link>
+            </Container>
         </Toolbar>
-        </nav>
+        
 
 
     )
 }
 
 export default NavBar;
+
