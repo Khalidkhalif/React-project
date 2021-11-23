@@ -30,8 +30,7 @@ class Cart extends Component{
                         
                         <Container mb={3} className="collection-item avatar" key={item.id}>                       
                                 <Card mb={3} className="card"> 
-                
-                                        <CardMedia component="img" image={item.img} alt="green iguana" width="193" height="130"/>
+                                    <CardMedia component="img" image={item.img} alt="green iguana" width="193" height="130"/>
                                 
                                 
                                     <CardContent className="card-content">
