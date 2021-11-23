@@ -19,6 +19,7 @@ import backgroundImage from './images/background.jpeg'
 
 
 
+
 const App = () =>   {
 
   const [menuItems] = useState(items);
@@ -57,6 +58,7 @@ const App = () =>   {
     </ThemeProvider>
 
         <Navbar />
+       
 
           <Routes>
             <Route exact path='/' element={<Home/>} />
